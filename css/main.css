@@ -1,0 +1,71 @@
+body{
+	background-color: #e6e6e2;
+	padding: 15px;
+}
+
+#header, #search-results, #favorites {
+	display: inline-block;
+	border: 5px dashed black;
+	border-radius: 10px;
+	padding: 10px;
+	width: 20%;
+	vertical-align: top;
+}
+
+#search-results, #favorites {
+	width: 30%;
+}
+
+h1, h2, p, button, input {
+	font-family: 'guardian-egyptt',georgia, serif;
+	margin: 0 0 5px 0;
+	display: block;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+#search-results {
+	margin: 0 10px 0 10px;
+	max-height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.item {
+	display: block;
+}
+
+.result, .favorite {
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+.prod-button {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+p {
+	font-size: 14px;
+}
+
+.desc, .price {
+	max-width: 50%;
+}
+
+.prod-img {
+	float: right;
+	display: block;
+	vertical-align: bottom;
+	margin-right: 4px;
+	height: 75px;
+	width: 75px;
+}
