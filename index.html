@@ -13,29 +13,32 @@
 	<div id="header">
 		<h1>The Perfect One.</h1>
 		<h2>Find. Compare. Save.</h2>
-		<input type="text" id="search" placeholder="enter your keywords here"></input>
-		<button>Search</button>
+		<input type="text" id="searchtext" placeholder="keyword search"></input>
+		<button id="search">Search</button>
+		<button id="reset">Reset</button>
 	</div>
 	
 	<!--middle box for search results -->
 	<div id="search-results">
-		<div class="result">
-			<img class="prod-img" src="media/img/sample.png"/>
-			<h2 class="title">Sample Search Result</h2>
-			<p class="price">Price: $100</p>
-			<p class="desc">Description: Long text area</p>
-			<button class="prod-button">Add</button>
+		<p class="prompt">Try searching for something!</p>
+		<p id="results-num"></p>
+		<div class="template result">
+			<h2 class="title"></h2>
+			<p class="price"></p>
+			<a class="list-id"></a>
+			<button class="prod-button" id="add">Add</button>
 		</div>
 	</div>
 
 	<!-- right box for favorites -->
 	<div id="favorites">
-		<div class="result">
-			<img class="prod-img" src="media/img/sample.png"/>
-			<h2 class="title">Sample Search Result</h2>
-			<p class="price">Price: $100</p>
-			<p class="desc">Description: Long text area</p>
-			<button class="prod-button">Remove</button>
+		<p class="prompt">Add favorites here to see images and compare.</p>
+		<div class="template favorite">
+			<img class="prod-img"/>
+			<h2 class="title"></h2>
+			<p class="price"></p>
+			<p class="desc"></p>
+			<button class="prod-button" id="remove">Remove</button>
 			<button class="prod-button">Buy It!</button>
 		</div>
 	</div>
